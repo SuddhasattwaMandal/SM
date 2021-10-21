@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.header{
+    min-height: 100vh;
+}
+
 .banner_top{
     background-color: #261227;
     position: absolute;
@@ -72,6 +76,7 @@
 }
 
 .location{
+    display: none;
     color: #261227;
     position: absolute;
     font-size: 14px;
@@ -81,6 +86,7 @@
 }
 
 .email{
+    display: none;
     color: #261227;
     position: absolute;
     font-size: 14px;
@@ -97,7 +103,7 @@
     display: none;
 }
 
-@media(max-width: 780px){
+@media(max-width: 840px){
     .nav-links ul li{
         display: block;
     }
@@ -133,5 +139,101 @@
         top: 10px;
         right: 10px;
         font-size: 20px;
+    }
+}
+
+.Publication_list{
+    position: absolute;
+    width: 750px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: #261227;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.Publication_list ol{
+    font-size: 14px;
+}
+
+.Publication_list ol h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Publication_list ol h2{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Publication_list ol li{
+    position: outside;
+    line-height: 20px;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.Publication_list ol li p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+@media(max-width: 840px){
+    .Publication_list{
+        width: 280px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .Publication_list ol{
+        font-size: 13px;
+    }
+
+    .Publication_list ol h1{
+        font-size: 15px;
+    }
+
+    .Publication_list ol h2{
+        font-size: 13px;
+    }
+
+    .Publication_list ol li{
+        font-size: 13px;
+    }
+
+    .Publication_list ol li p{
+        font-size: 13px;
+    }
+}
+
+.google_scholar{
+    position: absolute;
+    top: 900px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media(max-width: 840px){
+    .google_scholar{
+        top: 1750px;
+        font-size: 16px;
+        font-weight: 600;
     }
 }
