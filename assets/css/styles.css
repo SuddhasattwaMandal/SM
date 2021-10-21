@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: #261227;
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 70px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #dd81e2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover:after{
+    width: 100%;  
+}
+
+.text-box{
+    color: white;
+    position: absolute;
+    top: 6%;
+    left: 11%;
+    text-align: left;
+}
+
+nav .fa{
+    display: none;
+}
+
+.location{
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    padding-top:75vh;
+    left: 5%;
+    text-align: left;
+}
+
+.email{
+    color: white;
+    font-size: 14px;
+    padding-top:75vh;
+    padding-right:5%;
+    text-align: right;
+}
+
+@media(max-width: 700px){
+    .text-box{
+        font-size: 14px;
+        position: absolute;
+        top: 2%;
+        left: 23%;
+    }
+    nav img{
+        width: 60px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(235, 54, 54);
+        height: 100vh;
+        width: 130px;
+        top: 0;
+        right: -130px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 2px;
+    }
+    .location{
+        font-size: 13px;
+        padding-top:87vh;
+    }
+    .email{
+        font-size: 13px;
+        padding-top:87vh;
+    }
+}
