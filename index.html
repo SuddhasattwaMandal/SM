@@ -10,16 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-
 </head>
 
 
 <body>
     <section class="header">
-        <nav>
+
+        <div class="banner_top"></div>
+
+        <div class="dp">
             <a href="index.html"><img src="assets/images/dp.png"></a>
+        </div>
+
+        <div class="name">
+            <p>Suddhasattwa Mandal</p>
+        </div>
+
+        <div class="desc">
+            <p>PhD Research Fellow, IISER Pune</p>
+        </div>
+
+        <nav>
+
+            <div class="menu_button" id="menubutton">
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+
             <div class="nav-links" id="navlinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -29,13 +46,12 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
 
-        <div class="text-box">
-            <h1>Suddhasattwa Mandal</h1>
-            <p>PhD Research Fellow, IISER Pune</p>
-        </div>
+            <div class="close_button" id="closebutton">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            </div>
+            
+        </nav>
 
         <div class="location">
             <p><i class="fa fa-map-marker"></i>   Pune, India</p>
@@ -47,19 +63,26 @@
 
     </section>
 
-<!-- Javascript -->
+
 <script>
     var navlinks = document.getElementById("navlinks");
+    var menubutton = document.getElementById("menubutton");
+    var closebutton = document.getElementById("closebutton");
+
 
     function showMenu(){
-        navlinks.style.right = "0";
+        menubutton.style.display = "none";
+        closebutton.style.display = "block";
+        navlinks.style.display = "block";
     }
 
     function hideMenu(){
-        navlinks.style.right = "-130px";
+        menubutton.style.display = "block";
+        closebutton.style.display = "none";
+        navlinks.style.display = "none";
     }
-
 </script>
+
 
 </body>
 </html>
