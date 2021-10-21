@@ -1,1 +1,0 @@
-# Suddhasattwa Mandal
