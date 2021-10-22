@@ -75,26 +75,6 @@
     width: 100%;  
 }
 
-.location{
-    display: none;
-    color: #261227;
-    position: absolute;
-    font-size: 14px;
-    bottom:5px;
-    left: 10px;
-    text-align: left;
-}
-
-.email{
-    display: none;
-    color: #261227;
-    position: absolute;
-    font-size: 14px;
-    bottom:5px;
-    right: 10px;
-    text-align: right;
-}
-
 .menu_button{
     display: none;
 }
@@ -235,5 +215,85 @@
         top: 1750px;
         font-size: 16px;
         font-weight: 600;
+    }
+}
+
+.under_construction{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.address{
+    position: absolute;
+    width: 360px;
+    border: lightgrey;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px #969090;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-95%, 0%);
+    padding: 10px;
+}
+
+.email{
+    position: absolute;
+    width: 360px;
+    border: lightgrey;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px #969090;
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translate(-95%, 0%);
+    padding: 10px;
+}
+
+.address h1{
+    font-size: 16px;
+}
+
+.address p{
+    font-size: 14px;
+}
+
+.email h1{
+    font-size: 16px;
+}
+
+.email p{
+    font-size: 14px;
+}
+
+.gmap{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(15%, 0%);
+}
+
+@media(max-width: 840px){
+    .address{
+        width: 300px;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .email{
+        width: 300px;
+        top: 230px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .gmap{
+        top: 350px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 }
